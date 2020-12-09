@@ -19,26 +19,26 @@ describe('01-strings-tasks', () => {
     assert.equal(tasks.getStringFromTemplate('Chuck', 'Norris'), 'Hello, Chuck Norris!');
   });
 
-  // it.optional('getFirstChar should return the first char from given string', () => {
-  //   assert.equal(tasks.getFirstChar('John Doe'), 'J');
-  //   assert.equal(tasks.getFirstChar('cat'), 'c');
-  // });
+  it.optional('getFirstChar should return the first char from given string', () => {
+    assert.equal(tasks.getFirstChar('John Doe'), 'J');
+    assert.equal(tasks.getFirstChar('cat'), 'c');
+  });
 
-  // it.optional('extractNameFromTemplate should parse the name from given string', () => {
-  //   assert.equal(tasks.extractNameFromTemplate('Hello, John Doe!'), 'John Doe');
-  //   assert.equal(tasks.extractNameFromTemplate('Hello, Chuck Norris!'), 'Chuck Norris');
-  // });
+  it.optional('extractNameFromTemplate should parse the name from given string', () => {
+    assert.equal(tasks.extractNameFromTemplate('Hello, John Doe!'), 'John Doe');
+    assert.equal(tasks.extractNameFromTemplate('Hello, Chuck Norris!'), 'Chuck Norris');
+  });
 
-  // it.optional('removeLeadingAndTrailingWhitespaces should remove leading and trailing whitespaces from the string', () => {
-  //   assert.equal(tasks.removeLeadingAndTrailingWhitespaces('  Abracadabra'), 'Abracadabra');
-  //   assert.equal(tasks.removeLeadingAndTrailingWhitespaces('cat'), 'cat');
-  //   assert.equal(tasks.removeLeadingAndTrailingWhitespaces('\tHello, World! '), 'Hello, World!');
-  // });
+  it.optional('removeLeadingAndTrailingWhitespaces should remove leading and trailing whitespaces from the string', () => {
+    assert.equal(tasks.removeLeadingAndTrailingWhitespaces('  Abracadabra'), 'Abracadabra');
+    assert.equal(tasks.removeLeadingAndTrailingWhitespaces('cat'), 'cat');
+    assert.equal(tasks.removeLeadingAndTrailingWhitespaces('\tHello, World! '), 'Hello, World!');
+  });
 
-  // it.optional('repeatString should repeat string specified number of times', () => {
-  //   assert.equal(tasks.repeatString('A', 5), 'AAAAA');
-  //   assert.equal(tasks.repeatString('cat', 3), 'catcatcat');
-  // });
+  it.optional('repeatString should repeat string specified number of times', () => {
+    assert.equal(tasks.repeatString('A', 5), 'AAAAA');
+    assert.equal(tasks.repeatString('cat', 3), 'catcatcat');
+  });
 
   // it.optional('removeFirstOccurrences should remove all specified values from a string', () => {
   //   assert.equal(tasks.removeFirstOccurrences('To be or not to be', ' not'), 'To be or to be');
